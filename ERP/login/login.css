@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.login{
+    width: 100vw;
+}
+.sidebar{
+    background-color: #002754;
+    font-family: verdana,arial,sans-serif;
+    font-size: 10pt;
+    width: 350px;
+    position: fixed;
+    overflow-y: auto;
+    height: 93vh;
+}
+.delnet, .nlist{
+    background-color: navy;
+}
+.sidebar .gotoinfo a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px 0;
+    font-weight: bold;
+}
+a:hover{
+    background-color: #4169e1;
+}
+.onlinelibrary{
+    background-color: #5c9ccc;
+    color: #ffffff;
+    font-weight: bold;
+}
+.userinfo{
+    color: #FFFF99;
+}
+.footer{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(227, 219, 219);
+    height: 7vh;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: verdana,arial,sans-serif;
+    color: #011832;
+    bottom: 0;
+    z-index: 1;
+}
+#time{
+    position: relative;
+    left: 20px;
+}
+#risu{
+    position: relative;
+    right: 20px;
+}
+.mainprofile{
+    width: 100vw;
+}
+.studentprofile{
+    background-color: #002754;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: verdana,arial,sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    color: white;
+    float: right;
+    width: 73.5vw;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    z-index: 2;
+}
+.img2{
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    right: 60px;
+    top: 40px;
+    height: 300px;
+    width: 190px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+.risuimg{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    height: 200px;
+    width: 170px;
+    align-items: center;
+}
+.current{
+    display: inline-block;
+    font-family: verdana,arial,sans-serif;
+    font-size: 8pt;
+    position: relative;
+    top: 0x;
+    left: 20px;
+    font-weight: bolder;
+}
+.img3{
+    height: 30px;
+    position: relative;
+    top: 55px;
+    right: 70px;
+
+}
+.table{
+    position: absolute;
+    left: 370px;
+    top: 40px;
+    font-family: verdana,arial,sans-serif;
+    font-weight: 0;
+    font-size: 8pt;
+    
+}
+table {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+  }

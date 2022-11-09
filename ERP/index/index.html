@@ -1,0 +1,126 @@
+<!-- ID -- 123456789 -->
+<!-- PASSWORD satyam@28 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .index{
+            background-color: #f6f6f6;
+            width: 700px;
+            height: 400px;
+            color: darkslateblue;
+            position: absolute;
+            top: 50px;
+            display: flex;
+            justify-content: space-between;
+            clear: right;
+        }
+        .left img{
+            position: relative;
+            top: 80px; 
+            right: -20px;
+        }
+        .upper{
+            text-align: center;
+        }
+        .studentportal{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        .additionaldata{
+            text-align: center;
+            position: relative;
+            left: -20px;
+        }
+        .shobhit{
+            position: relative;
+            left: 140px;
+        }
+        .studentportal{
+            position: relative;
+            top: 10px;
+        }
+        .password{
+            position: relative;
+            left: 16px;
+        }
+        .lorem{
+            position: absolute;
+            top: 415px;
+            right: 340px;
+            font-size: 13px;
+            color: darkslateblue;;
+        }
+        .risu{
+            position: absolute;
+            top: 415px;
+            left: 340px;
+            font-size: 13px;
+            color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <div class="left">
+            <img src="/images/logo.png" alt="Loyola Academy Log Img">
+        </div>
+    <div class="right">
+        <p class="upper">Loyola Academy <br>
+            Degree & PG COllege (Autonomous), <br>
+            Off. Suchitra X Roads Alwal, Secunderabad - 500 010.</p>
+            <p class="studentportal">STUDENT PORTAL</p><br><br>
+            <form action="/login/login.html" target="_blank" onsubmit=" return validate()">
+            <label for="YourId">Your ID (UID):</label>
+            <input type="number" name="YourId" id="YourId" class="class" autocomplete="off"><br><br>
+            <label for="Password" class="password">Password:</label>
+            <input type="password" name="Password" id="Password" class="password" autocomplete="off"><br><br>
+            <a href="forgetpassword.html" target="_blank" rel="noopener noreferrer" class="shobhit">Forget Password?</a><br>
+                <input type="submit" value="Log In"   id="click" onclick="check()"/>
+            </form>
+        <p class="additionaldata">If you are a Student and this is your first login, you must use your <br> Register No. (UID) as your User ID, with your date of birth <br>[Format ddmmyyyy E.g. 03121990] as your password.</p>
+    </div>
+</div>
+<p class="lorem">eVarsity® ERP Developed by The one and only me.</p>
+<p class="risu" id="time"></p>
+<script>
+    function time(){
+    time = new Date()
+    document.getElementById('time').innerHTML = time;
+}
+time();
+setInterval(time, 1000);
+function validate(){
+    let id = '123456789';
+    let password  = 'satyam@28'
+    let username = document.getElementById('YourId')
+    let password2 = document.getElementById('Password')
+    if(username.value ==id && password2.value ==password){
+        return true;
+    }
+    else{
+        alert('the id and password entered by you is incorrect')
+        return false;
+    }
+}
+// function check(){
+//     if(YourId.value == "" || password.value == ""){
+//                 alert('Please Enter the data')
+//                 return false
+//             }
+// }
+</script>
+</body>
+</html>
